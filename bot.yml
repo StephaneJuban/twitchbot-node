@@ -1,3 +1,16 @@
 name: twitchbot
 description: Ask me anything regarding Twitch
 avatar: bot/avatar.png
+config:
+  - name: TWITCH_CLIENT_ID
+    friendly_name: Twitch Client ID
+    type: text
+    global: false
+  - name: TWITCH_CLIENT_SECRET
+    friendly_name: Twitch Client Secret
+    type: secret
+    global: false
+  - name: TWITCH_REDIRECT_URI
+    friendly_name: Twitch Redirect URI
+    type: text
+    global: false
