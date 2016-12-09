@@ -1,0 +1,27 @@
+{
+  "name": "twitchbot",
+  "version": "1.0.0",
+  "description": "A Slack bot for Twitch written in Node.js",
+  "scripts": {
+    "watch": "nodemon server.js",
+    "test": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StephaneJuban/twitchbot-node.git"
+  },
+  "author": "Stéphane Juban",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/StephaneJuban/twitchbot-node/issues"
+  },
+  "homepage": "https://github.com/StephaneJuban/twitchbot-node#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "nodemon": "^1.11.0",
+    "slapp": "^1.2.0",
+    "slapp-context-beepboop": "^1.1.0",
+    "slapp-convo-beepboop": "^1.0.0",
+    "standard": "^8.4.0"
+  }
+}
