@@ -4,6 +4,7 @@ const express = require('express')
 const Slapp = require('slapp')
 const ConvoStore = require('slapp-convo-beepboop')
 const Context = require('slapp-context-beepboop')
+const TwitchAPI = require('twitch-api')
 
 // use `PORT` env var on Beep Boop - default to 3000 locally
 var port = process.env.PORT || 3000
@@ -14,6 +15,13 @@ var slapp = Slapp({
   convo_store: ConvoStore(),
   context: Context()
 })
+
+var twitch = new TwitchAPI({
+  clientId: process.env.TWITCH_CLIENT_ID,
+  clientSecret: process.env.TWITCH_CLIENT_SECRET,
+  redirectUri: process.env.TWITCH_REDIRECT_URI,
+  scopes: []
+});
 
 
 var HELP_TEXT = `
